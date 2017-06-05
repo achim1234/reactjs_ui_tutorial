@@ -1,29 +1,16 @@
 import React from "react";
-import ButtonStyles from "./ButtonStyles";
-
 export default class RevolverItem extends React.Component {
 	constructor(props) {
 		super(props);
-
-		this.onClickHandler = this.onClickHandler.bind(this);
-	}
-
-	onClickHandler(){
-		var value = this.props.value;
-		alert(value + " clicked!");
-		console.log(value + " clicked!");
-
-
-
-		    
-	
-		
 	}
 
 	render() {
-
 		var x, y;
-		var currentItem = this.props.value -1;
+		var currentItem = this.props.currentItem -1;
+
+		//Farbe, die als value-Attribut übergeben wird
+		var value = this.props.value;
+
 		var num = this.props.maxItems;
 		var radius = 50;
 		var offsetX = 100;
@@ -38,8 +25,8 @@ export default class RevolverItem extends React.Component {
 		console.log("y: " + y);
 
 		const style = {
-			backgroundColor: ButtonStyles.colorButton,
-			color: ButtonStyles.colorWhite,
+			backgroundColor: '#673AB7',
+			color: 'white',
 			position: 'absolute',
 			left: x,
 			top: y,
@@ -50,10 +37,11 @@ export default class RevolverItem extends React.Component {
 		};
 
 
-		
+		var toggleShowHide = this.props.toggleShowHide;
+
 		return (
-				<button style={style} onClick={this.onClickHandler} onTouchEnd={this.onClickHandler}>{this.props.value}</button>
+				<button style={style} onClick={() => toggleShowHide(this.props.value, this.props.htmlElement)} onTouchCancel={() => toggleShowHide(this.props.value, this.props.htmlElement)}>{this.props.value}</button>
 		
 		);
 	}
-}
+} 

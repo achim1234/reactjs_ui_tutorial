@@ -1,8 +1,5 @@
 import React from "react";
-
 import RevolverItem from "./RevolverItem";
-import ButtonStyles from "./ButtonStyles";
-
 export default class Button extends React.Component {
 	constructor(props) {
 		super(props);
@@ -35,8 +32,8 @@ export default class Button extends React.Component {
 
 	render() {
 		const mainButton = {			
-			backgroundColor: ButtonStyles.colorButton,
-			color: ButtonStyles.colorWhite,
+			backgroundColor: '#2196F3',
+			color: 'white',
 			margin: 0,
 			marginTop: 0,
 			width: 50,
@@ -58,8 +55,7 @@ export default class Button extends React.Component {
 
 		var revolverButtons = [];
 		for(var i = 1; i <= this.props.maxItems; i++){
-			//alert("Schleife: " + i);
-			revolverButtons.push(this.state.showComponent && <RevolverItem htmlElement={this.props.htmlElement} toggleShowHide={this.toggleShowHide} value={this.props.values[i-1]} currentItem={i} maxItems={this.props.maxItems} />);
+			revolverButtons.push(this.state.showComponent && <RevolverItem toggleShowHide={this.toggleShowHide} value={this.props.values[i-1]} currentItem={i} maxItems={this.props.maxItems} />);
 		}
 
 		return (
