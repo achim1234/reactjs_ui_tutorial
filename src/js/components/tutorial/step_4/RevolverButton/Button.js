@@ -24,22 +24,17 @@ export default class Button extends React.Component {
 			height: 50,
 			borderRadius: 25,
 			margin: 0,
-			marginTop: 0,
-			position: 'absolute',
-			top: 85,
-			left: 85
-		};
-
-		const mainCentered = {
-			display: 'flex',
-			position: 'relative',
-			alignItems: 'center',
-			justifyContent: 'center',
 			marginTop: 0
 		};
 
+		const completeButton = {
+			display: 'inline-block',
+			position: 'relative',
+			marginLeft: 70
+		};
+
 		return (
-			<div style={mainCentered}>
+			<div style={completeButton}>
 				<button style={mainButton} onClick={this.toggleShowHide}>Button</button>
 
 				<div>

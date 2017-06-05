@@ -37,34 +37,27 @@ export default class Button extends React.Component {
 			width: 50,
 			height: 50,
 			borderRadius: 25,
-			border: 'none',
-			position: 'absolute',
-			top: 85,
-			left: 85
+			border: 'none'
 		};
 
-		const mainCentered = {
-			display: 'flex',
+		const completeButton = {
+			display: 'inline-block',
 			position: 'relative',
-			alignItems: 'center',
-			justifyContent: 'center',
-			marginTop: 0
+			marginLeft: 70,
+			marginTop: 50
 		};
 
 		var revolverButtons = [];
 		for(var i = 1; i <= this.props.maxItems; i++){
-			revolverButtons.push(this.state.showComponent && <RevolverItem toggleShowHide={this.toggleShowHide} value={this.props.values[i-1]} currentItem={i} maxItems={this.props.maxItems} />);
+			revolverButtons.push(this.state.showComponent && <RevolverItem key={i} toggleShowHide={this.toggleShowHide} value={this.props.values[i-1]} currentItem={i} maxItems={this.props.maxItems} />);
 		}
 
 		return (
-			<div id="revolverButtonBox" >
-				<div id="revolverItems" >
-					<div style={mainCentered}>
-						<button id="btnRev" style={mainButton} onClick={this.toggleShowHideParent} onTouchCancel={this.toggleShowHideParent}>{this.props.btnName}</button>
-						{revolverButtons}
-					</div>
-				</div>
+			<div style={completeButton}>
+				<button id="btnRev" style={mainButton} onClick={this.toggleShowHideParent} onTouchCancel={this.toggleShowHideParent}>{this.props.btnName}</button>
+				{revolverButtons}
 			</div>
+			
 		);
 	}
 }

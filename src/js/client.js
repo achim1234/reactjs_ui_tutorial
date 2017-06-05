@@ -4,12 +4,14 @@ import { Router, Route, IndexRoute, hashHistory } from "react-router";
 import { Provider } from "react-redux";
 
 import Index from "./pages/Index";
-import Initial from "./pages/Initial";
-import Movies from "./pages/Movies";
 import Layout from "./pages/Layout";
-import Formular from "./pages/Formular";
-import Email from "./pages/Email";
-import Menu from "./pages/Menu";
+import StepOne from "./pages/StepOne";
+import StepTwo from "./pages/StepTwo";
+import StepThree from "./pages/StepThree";
+import StepFour from "./pages/StepFour";
+import StepFive from "./pages/StepFive";
+import StepSix from "./pages/StepSix";
+import Examples from "./pages/Examples";
 
 import store from "./store";
 
@@ -22,16 +24,13 @@ ReactDOM.render(
 		<Router history={hashHistory}>
 			<Route path="/" component={Layout}>
 				<IndexRoute component={Index} />
-				<Route path="initial" component={Initial} />
-
-				<Route path="movies" component={Movies} />
-
-				<Route path="formular" component={Formular} />
-				<Route path="email" component={Email} />
-				<Route path="menu" component={Menu} />
-
-
-
+				<Route path="stepOne" component={StepOne} />
+				<Route path="stepTwo" component={StepTwo} />
+				<Route path="stepThree" component={StepThree} />
+				<Route path="stepFour" component={StepFour} />
+				<Route path="stepFive" component={StepFive} />
+				<Route path="stepSix" component={StepSix} />
+				<Route path="examples" component={Examples} />
 			</Route>
 		</Router>
 	</Provider>

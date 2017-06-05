@@ -12,8 +12,8 @@ export default class RevolverItem extends React.Component {
 		var value = this.props.value;
 		var num = this.props.maxItems;
 		var radius = 50;
-		var offsetX = 100;
-		var offsetY = 100;
+		var offsetX = 12;
+		var offsetY = 12;
 
      	x = (radius * Math.cos(currentItem / num * 2 * Math.PI)) + offsetX;
 		y = (radius * Math.sin(currentItem / num * 2 * Math.PI)) + offsetY;
