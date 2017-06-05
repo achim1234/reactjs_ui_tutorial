@@ -14,7 +14,6 @@ export default class Button extends React.Component {
 
 	//wird aufgerufen, wenn RevolverItem angecklickt wurde. Werte werden an die Funktion übergeben.
 	toggleShowHide(value, htmlElement){
-		//alert(value + ", " + htmlElement);
 		var newState = this.state.showComponent == false ? true : false;
 		this.setState({showComponent: newState});
 
@@ -27,7 +26,6 @@ export default class Button extends React.Component {
 		var newState = this.state.showComponent == false ? true : false;
 		this.setState({showComponent: newState});
 	}
-
 
 	render() {
 		const mainButton = {			
@@ -54,7 +52,8 @@ export default class Button extends React.Component {
 
 		var revolverButtons = [];
 		for(var i = 1; i <= this.props.maxItems; i++){
-			revolverButtons.push(this.state.showComponent && <RevolverItem toggleShowHide={this.toggleShowHide} value={this.props.values[i-1]} currentItem={i} maxItems={this.props.maxItems} />);
+			//alert("Schleife: " + i);
+			revolverButtons.push(this.state.showComponent && <RevolverItem htmlElement={this.props.htmlElement} toggleShowHide={this.toggleShowHide} value={this.props.values[i-1]} currentItem={i} maxItems={this.props.maxItems} />);
 		}
 
 		return (

@@ -19,7 +19,7 @@ export default class RevolverItem extends React.Component {
 		y = (radius * Math.sin(currentItem / num * 2 * Math.PI)) + offsetY;
 
 		const style = {
-			backgroundColor: '#673AB7',
+			backgroundColor: value,
 			color: 'white',
 			position: 'absolute',
 			left: x,
@@ -30,10 +30,11 @@ export default class RevolverItem extends React.Component {
 			border: 'none'
 		};
 
+
 		var toggleShowHide = this.props.toggleShowHide;
 
 		return (
-				<button style={style} onClick={() => toggleShowHide(this.props.value, this.props.htmlElement)} onTouchCancel={() => toggleShowHide(this.props.value, this.props.htmlElement)}>{this.props.value}</button>
+				<button style={style} onClick={() => toggleShowHide(this.props.value, this.props.htmlElement)} onTouchCancel={() => toggleShowHide(this.props.value, this.props.htmlElement)}></button>
 		);
 	}
 } 
