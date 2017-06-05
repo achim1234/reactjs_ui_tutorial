@@ -28,7 +28,6 @@ export default class Button extends React.Component {
 		this.setState({showComponent: newState});
 	}
 
-
 	render() {
 		const mainButton = {			
 			backgroundColor: '#2196F3',
