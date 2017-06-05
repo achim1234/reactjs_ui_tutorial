@@ -16,6 +16,7 @@ export default class Button extends React.Component {
 	}
 
 	render() {
+		
 		const mainButton = {			
 			backgroundColor: '#2196F3',
 			color: 'white',
