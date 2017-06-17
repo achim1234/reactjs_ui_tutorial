@@ -11,6 +11,7 @@ import StepThree from "./pages/StepThree";
 import StepFour from "./pages/StepFour";
 import StepFive from "./pages/StepFive";
 import StepSix from "./pages/StepSix";
+import StepSeven from "./pages/StepSeven";
 import Examples from "./pages/Examples";
 
 import store from "./store";
@@ -30,6 +31,7 @@ ReactDOM.render(
 				<Route path="stepFour" component={StepFour} />
 				<Route path="stepFive" component={StepFive} />
 				<Route path="stepSix" component={StepSix} />
+				<Route path="stepSeven" component={StepSeven} />
 				<Route path="examples" component={Examples} />
 			</Route>
 		</Router>
