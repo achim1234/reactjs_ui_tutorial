@@ -34,6 +34,7 @@ export default class Button extends React.Component {
 		var background = document.getElementsByTagName('body')[0];
 		background.style.backgroundColor = "grey";
 		background.style.opacity = 0.8;
+		
 	}
 
 	render() {
