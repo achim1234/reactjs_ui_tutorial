@@ -57,7 +57,16 @@ export default class NavigationBar extends React.Component {
               <Link to="stepSeven" onClick={this.toggleCollapse.bind(this)}>Step 7</Link>
             </li>
             <li>
-              <Link to="examples" onClick={this.toggleCollapse.bind(this)}>Examples</Link>
+              <Link to="useCaseOneDropDown" onClick={this.toggleCollapse.bind(this)}>Use Case 1 (Drop Down)</Link>
+            </li>
+            <li>
+              <Link to="useCaseOneRevolverButton" onClick={this.toggleCollapse.bind(this)}>Use Case 1 (Revolver Button)</Link>
+            </li>
+            <li>
+              <Link to="useCaseTwoDropDown" onClick={this.toggleCollapse.bind(this)}>Use Case 2 (Drop Down)</Link>
+            </li>
+            <li>
+              <Link to="useCaseTwoRevolverButton" onClick={this.toggleCollapse.bind(this)}>Use Case 2 (Revolver Button)</Link>
             </li>
           </ul>
         </div>

@@ -12,7 +12,10 @@ import StepFour from "./pages/StepFour";
 import StepFive from "./pages/StepFive";
 import StepSix from "./pages/StepSix";
 import StepSeven from "./pages/StepSeven";
-import Examples from "./pages/Examples";
+import UseCaseOneDropDown from "./pages/UseCaseOneDropDown";
+import UseCaseOneRevolverButton from "./pages/UseCaseOneRevolverButton";
+import UseCaseTwoDropDown from "./pages/UseCaseTwoDropDown";
+import UseCaseTwoRevolverButton from "./pages/UseCaseTwoRevolverButton";
 
 import store from "./store";
 
@@ -32,7 +35,11 @@ ReactDOM.render(
 				<Route path="stepFive" component={StepFive} />
 				<Route path="stepSix" component={StepSix} />
 				<Route path="stepSeven" component={StepSeven} />
-				<Route path="examples" component={Examples} />
+				<Route path="useCaseOneDropDown" component={UseCaseOneDropDown} />
+				<Route path="useCaseOneRevolverButton" component={UseCaseOneRevolverButton} />
+				<Route path="useCaseTwoDropDown" component={UseCaseTwoDropDown} />
+				<Route path="useCaseTwoRevolverButton" component={UseCaseTwoRevolverButton} />
+
 			</Route>
 		</Router>
 	</Provider>
