@@ -17,14 +17,23 @@ export default class Button extends React.Component {
 		var newState = this.state.showComponent == false ? true : false;
 		this.setState({showComponent: newState});
 
-		var mainButton = document.getElementById('btnRev');
-		mainButton.style.backgroundColor = value;
+		//var background = document.getElementsByTagName(this.props.htmlElement)[0];
+		//background.style.backgroundColor = value;
+		//alert(event.target);
+		var mainButton = document.getElementById('btnRev').innerHTML = value;
+		var background = document.getElementsByTagName('body')[0];
+		background.style.backgroundColor = "white";
+		background.style.opacity = 1;
 	}
 
 	//wird nur aufgerufen, wenn großer Button in der Mitte geklickt wird
 	toggleShowHideParent(){
 		var newState = this.state.showComponent == false ? true : false;
 		this.setState({showComponent: newState});
+
+		var background = document.getElementsByTagName('body')[0];
+		background.style.backgroundColor = "grey";
+		background.style.opacity = 0.8;
 	}
 
 	render() {
@@ -33,17 +42,17 @@ export default class Button extends React.Component {
 			color: 'white',
 			margin: 0,
 			marginTop: 0,
-			width: 50,
-			height: 50,
-			borderRadius: 25,
+			width: 90,
+			height: 24,
+			borderRadius: 12,
 			border: 'none'
 		};
 
 		const completeButton = {
 			display: 'inline-block',
 			position: 'relative',
-			marginLeft: 0,
-			marginTop: 0
+			marginLeft: 70,
+			marginTop: 10
 		};
 
 		var revolverButtons = [];

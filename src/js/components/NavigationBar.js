@@ -19,22 +19,23 @@ export default class NavigationBar extends React.Component {
     const navClass = collapsed ? "collapse" : "";
 
     return (
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+      <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div className="container">
+          <div className="navbar-header">
             <button type="button" class="navbar-toggle" onClick={this.toggleCollapse.bind(this)} >
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar" />
-              <span class="icon-bar" />
-              <span class="icon-bar" />
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+              <span className="icon-bar" />
             </button>
           </div>
         </div>
-        <div class={"navbar-collapse " + navClass} id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+        <div className={"navbar-collapse " + navClass} id="bs-example-navbar-collapse-1">
+          <ul className="nav navbar-nav">
             <li>
               <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>Index</IndexLink>
             </li>
+            {/*
             <li>
               <Link to="stepOne" onClick={this.toggleCollapse.bind(this)}>Step 1</Link>
             </li>
@@ -47,6 +48,7 @@ export default class NavigationBar extends React.Component {
             <li>
               <Link to="stepFour" onClick={this.toggleCollapse.bind(this)}>Step 4</Link>
             </li>
+          */}
             <li>
               <Link to="stepFive" onClick={this.toggleCollapse.bind(this)}>Step 5</Link>
             </li>
