@@ -12,7 +12,7 @@ export default class UseCaseTwoDropDown extends React.Component {
     return (
       <div>
         <h2>Use Case 2 (Drop Down)</h2>
-        <p>In diesem Use Case soll eine Automarke und Kraftstoffart ausgewählt werden, um den Spritverbrauch zu ermitteln.</p>
+        <p>In diesem Use Case soll in einem simulierten Kraftstoffrechner eine Automarke und eine Kraftstoffart ausgewählt werden um den Kraftstoffverbrauch des gewählten Autos zu berechnen.</p>
         
         <div style={shopStyle}>
           <h1>Kraftstoff-Rechner</h1>

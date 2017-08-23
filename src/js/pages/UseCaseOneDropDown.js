@@ -32,23 +32,18 @@ export default class UseCaseOneDropDown extends React.Component {
     };
 
     const shopStyle = {
-      backgroundColor: 'LightCyan',
-      padding: 20
+      backgroundColor: 'white',
+      padding: 40
     };
-
-
 
     return (
       <div>
         <h2>Use Case 1 (Drop Down)</h2>
-        <p>In diesem Use Case soll in einem fiktiven Shop die Farbe eines Kugelschreibers ausgewählt werden.</p>
+        <p>In diesem Use Case soll in einem simulierten Internetshop ein Kugelschreiber mit grüner Farbe bestellt werden. </p>
         <div style={shopStyle}>
           <h1>Kugelschreiber Shop</h1>
           <div>
             <p>Beschreibung: Kugelschreiber mit vielen verschiedenen Farben!</p>
-
-
-            
             <p>Farbauswahl:</p>
             <select className="selectpicker">
               <option style={style1} value="hellpink">helles Pink</option>
