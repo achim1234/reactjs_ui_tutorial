@@ -20,7 +20,13 @@ export default class UseCaseTwoDropDown extends React.Component {
           <select className="selectpicker">
             <option value="mercedes">Mercedes</option>
             <option value="bmw">BMW</option>
-            <option value="audi">Audi</option>
+            <option value="audi">Ferrari</option>
+            <option value="audi">Ford</option>
+            <option value="audi">Renault</option>
+            <option value="audi">VW</option>
+            <option value="audi">Porsche</option>
+            <option value="audi">Opel</option>
+            <option value="audi">KIA</option>
           </select> 
           <br /><br />
           <p>Kraftstoffart: </p>

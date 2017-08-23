@@ -21,22 +21,12 @@ export default class UseCaseTwoRevolverButton extends React.Component {
           <h1>Kraftstoff-Rechner</h1>
           <label>Hersteller:</label>
           <br />
-          <select style={marginLeft}>
-            <option value="mercedes">Mercedes</option>
-            <option value="bmw">BMW</option>
-            <option value="audi">Audi</option>
-            <option value="audi">Audi</option>
-            <option value="audi">Audi</option>
-            <option value="audi">Audi</option>
-            <option value="audi">Audi</option>
-            <option value="audi">Audi</option>
-            <option value="audi">Audi</option>
-            <option value="audi">Audi</option>
-          </select> 
-          <br /><br />
+          <Button className="1" htmlElement="" btnName="Touch" maxItems="9" values={['Mercedes', 'BMW', 'Ferrari', 'Ford', 'Renault', 'VW', 'Porsche', 'Opel', 'KIA']} />
+          <br /><br /><br /><br /><br />
+
           <label>Kraftstoffart:</label>
           <br />
-          <Button htmlElement="" btnName="Touch" maxItems="6" values={['Alle', 'Diesel', 'E10', 'Erdgas', 'Autogas', 'Benzin']} />
+          <Button className="2" htmlElement="" btnName="Touch" maxItems="6" values={['Alle', 'Diesel', 'E10', 'Erdgas', 'Autogas', 'Benzin']} />
           <br /><br /><br /><br />
           <button type="button">Suchen</button>
         </div>

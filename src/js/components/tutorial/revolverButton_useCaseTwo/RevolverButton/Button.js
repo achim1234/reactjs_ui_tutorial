@@ -17,10 +17,7 @@ export default class Button extends React.Component {
 		var newState = this.state.showComponent == false ? true : false;
 		this.setState({showComponent: newState});
 
-		//var background = document.getElementsByTagName(this.props.htmlElement)[0];
-		//background.style.backgroundColor = value;
-		//alert(event.target);
-		var mainButton = document.getElementById('btnRev').innerHTML = value;
+		var mainButton = document.getElementsByTagName('button')[this.props.className].innerHTML = value;
 		var background = document.getElementsByTagName('body')[0];
 		background.style.backgroundColor = "white";
 		background.style.opacity = 1;
@@ -34,7 +31,6 @@ export default class Button extends React.Component {
 		var background = document.getElementsByTagName('body')[0];
 		background.style.backgroundColor = "grey";
 		background.style.opacity = 0.8;
-		
 	}
 
 	render() {
